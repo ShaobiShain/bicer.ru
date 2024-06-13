@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="./assets/styles/toOrder.css">
+    <link href="./assets/styles/modal.css" rel="stylesheet">
+    <title>Custom Motorcycle Order Form</title>
+    
+</head>
+
+<body>
+
+    <div style="max-width: 50%; margin-left: auto; margin-right: auto; padding: 15px;">
+
+    
+        <form id="form" action="#" novalidate>
+          <div class="text-field">
+            <label class="text-field__label" for="firstname">Имя</label>
+            <input class="text-field__input" type="text" name="firstname" id="firstname" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="lastname">Фамилия</label>
+            <input class="text-field__input" type="text" name="lastname" id="lastname" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="email">Email</label>
+            <input class="text-field__input" type="email" name="email" id="email" required>
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="city">Адрес</label>
+            <input class="text-field__input" type="text" name="city" id="city">
+            <div class="text-field__message"></div>
+          </div>
+          <div class="text-field">
+            <label class="text-field__label" for="number">Телефон</label>
+            <input class="text-field__input" type="number" name="number" id="number" min="1" max="10" step="1" required>
+            <div class="text-field__message"></div>
+          </div>
+
+        </form>
+    
+      </div>
+
+
+    <form action="#" method="post">
+        <h1>Параметры сборки:</h1> 
+        <label for="engine-volume">Объём двигателя:</label>
+        <select id="engine-volume" name="engine-volume">
+            <option value="">Выберите объём двигателя</option>
+            <option value="125">125 куб.см</option>
+            <option value="250">250 куб.см</option>
+            <option value="500">500 куб.см</option>
+            <option value="1000">1000 куб.см</option>
+        </select>
+
+        <label for="color">Цвет:</label>
+        <select id="color" name="color">
+            <option value="">Выберите цвет</option>
+            <option value="red">Красный</option>
+            <option value="blue">Синий</option>
+            <option value="black">Чёрный</option>
+            <option value="green">Зелёный</option>
+        </select>
+
+        <label for="handlebar">Руль:</label>
+        <select id="handlebar" name="handlebar">
+            <option value="">Выберите руль</option>
+            <option value="flat">Плоский</option>
+            <option value="drag">Драгстер</option>
+            <option value="ape">Апехэнджер</option>
+            <option value="clip-on">Клип-он</option>
+        </select>
+
+        <label for="transmission">Трансмиссия:</label>
+        <select id="transmission" name="transmission">
+            <option value="">Выберите трансмиссию</option>
+            <option value="manual">Механическая</option>
+            <option value="automatic">Автоматическая</option>
+            <option value="sequential">Секвентальная</option>
+        </select>
+
+        <label for="wheel-size">Размер колёс:</label>
+        <select id="wheel-size" name="wheel-size">
+            <option value="">Выберите размер колёс</option>
+            <option value="17">17 дюймов</option>
+            <option value="18">18 дюймов</option>
+            <option value="19">19 дюймов</option>
+            <option value="21">21 дюйм</option>
+        </select>
+
+        <label for="exhaust">Выхлопная система:</label>
+        <select id="exhaust" name="exhaust">
+            <option value="">Выберите выхлопную систему</option>
+            <option value="stock">Стандартная</option>
+            <option value="slip-on">Слип-он</option>
+            <option value="full-system">Полная система</option>
+        </select>
+
+        <label for="exhaust">Аудио система:</label>
+        <select id="exhaust" name="exhaust">
+            <option value="">Выберите аудио систему</option>
+            <option value="stock">Harman/Cordon</option>
+            <option value="slip-on">Нет</option>
+            
+        </select>
+
+            <label for="brakes">Тип тормозов:</label>
+    <select id="brakes" name="brakes">
+        <option value="">Выберите тип тормозов</option>
+        <option value="disc">Дисковые</option>
+        <option value="drum">Барабанные</option>
+        <option value="combined">Комбинированные</option>
+    </select>
+
+    <label for="suspension">Подвеска:</label>
+    <select id="suspension" name="suspension">
+        <option value="">Выберите тип подвески</option>
+        <option value="telescopic">Телескопическая</option>
+        <option value="inverted">Инверсионная</option>
+        <option value="monoshock">Моноамортизатор</option>
+        <option value="parallelogram">Параллелограмм</option>
+    </select>
+
+    <label for="seat">Сиденье:</label>
+    <select id="seat" name="seat">
+        <option value="">Выберите тип сиденья</option>
+        <option value="sport">Спортивное</option>
+        <option value="touring">Туристическое</option>
+        </select>
+
+        <div class="file-input-container">
+            <label for="">Добавьте Чертежи или Концепты:</label>
+            <input type="file" id="concept-drawings" name="concept-drawings[]" multiple accept="image/*,.pdf,.zip">
+            <button class="file-input-button" type="button">Выберите файлы</button>
+        </div>
+    
+        <script src="./assets/js/toOrder.js"></script>
+        <script src="./assets/js/modal.js"></script>
+
+        <button  class="commit_button" id="commit_button">Заказать</button>
+        <p class="ysl">Нажимая на кнопку ЗАКАЗАТЬ Вы даете согласие на обработку указанных персональных данных в соответствии с законом РФ (152-ФЗ)</p>
+
+    </form>
+
+    <script>
+        // создаём модальное окно
+        const modal = new ItcModal({
+    title: 'Заказ оформлен',
+    content: '<p>Скоро вам поступит звонок от нашего менеджера для окончательного подтверждения заказа. Оплата происходит при получении.</p> <br> <h1>Ваш чек:</h1> <button id="downloadButton">Скачать PDF</button>' 
+
+    
+
+  });
+        // при клике по кнопке #show-modal
+        document.querySelector('#commit_button').addEventListener('click', () => {
+          // откроем модальное окно
+          event.preventDefault()
+          modal.show();
+        });
+      </script>
+
+      <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+    // Создаем ссылку с адресом к вашему PDF файлу
+    var fileUrl = './assets/doc/chek.pdf';
+    var a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = fileUrl.substr(fileUrl.lastIndexOf('/') + 1); // Устанавливаем имя для скачиваемого файла
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+      </script>
+</body>
+
+</html>

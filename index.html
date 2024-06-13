@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>BIKER.RU</title>
+    <link rel="stylesheet" href="./assets/styles/simple-adaptive-slider.css">
+    <!-- Подключаем JS слайдера -->
+    <script defer src="./assets/js/simple-adaptive-slider.js"></script>
+</head>
+<body>
+
+    
+    <div class="header">
+        <a href="#default" class="logo">BIKER<span class="RU">.RU</span></a>
+        <div class="header-right">
+          <input class="cart_btn" id="cart_btn" type="image" src="./assets/img/button/pngegg.png">
+          <a class="active" href="./index.html">Главная</a>
+          <a href="./toOrder.html">Под заказ</a>
+          <a href="./aboutUs.html">О нас</a>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
+      <style>
+        /* стили для элемента body */
+        body {
+          margin: 0;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+            sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        }
+    
+        /* дополнительные стили для этого примера */
+        .itcss__items {
+          counter-reset: slide;
+        }
+    
+        .itcss__item {
+          counter-increment: slide;
+        }
+    
+        .itcss__item>div::before {
+          content: counter(slide);
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          color: #fff;
+          font-style: italic;
+          font-size: 32px;
+          font-weight: bold;
+        }
+    
+        .itcss__item > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          color: white;
+          font-weight: bold;
+        }
+    
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          100% {
+            opacity: 1;
+            transform: none;
+          }
+        }
+    
+        .itcss__item_active .itcss__text {
+          animation-name: fadeIn;
+          animation-duration: 2s;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <!-- Разметка слайдера -->
+      <div class="itcss">
+        <div class="itcss__wrapper">
+          <div class="itcss__items">
+            <div class="itcss__item">
+              <div style="height: 600px; background-image: url('./assets/img/1675731547_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-20.jpg');">
+                <div class="itcss__text">Harley-Davidson</div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div style="height: 600px; background-image: url('./assets/img/1675731506_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-6.jpg');">
+                <div class="itcss__text">Harley-Davidson 2</div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div style="height: 600px; background-image: url('./assets/img/1675731526_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-56.jpg');">
+                <div class="itcss__text">Harley-Davidson 3</div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div style="height: 600px; background-image: url('./assets/img/1675731555_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-41.jpg');">
+                <div class="itcss__text">Harley-Davidson 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+        <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+      </div>
+
+
+      <div class="container_text">
+		<h1>Добро пожаловать на сайт Кастомные байков </h1>
+		<p>Приветствую вас на моей странице! Меня зовут Джон, и я увлеченно занимаюсь созданием кастомных мотобайков. Мотоциклы для меня не просто транспортное средство, это настоящее искусство, которое я рад делиться с другими.</p>
+		<p>Каждый мотоцикл, который я создаю, является уникальным и создается в соответствии с вашими индивидуальными предпочтениями. Я использую только качественные материалы и оборудование, чтобы гарантировать, что ваш мотоцикл не только будет выглядеть отлично, но и будет надежным и безопасным в эксплуатации.</p>
+		<p>Если вы ищете что-то особенное, что отражает ваш стиль и личность, то вы обратились по адресу. Я готов к сотрудничеству и созданию вашего мечты мотобайка на заказ. Свяжитесь со мной, и давайте начнем создавать ваш собственный шедевр на двух колесах!</p>
+	</div>
+
+
+      <div class="catalog-items">
+        <article class="catalog-item new">
+          <div class="actions">
+            <a class="btn-ens-action btn-ens-style" data-rel="e04e8c02336476">Купить</a>
+          </div>
+          <div  class="catalog-item-image">
+            <img width="2180" height="168" src="./assets/img/1675731530_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-12.jpg" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <h1 class="title">Крепыш</h1>
+
+          <div class="price">1 500 500 Р.</div>
+        </article>
+        <article class="catalog-item new">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="catalog-item-image">
+            <img width="218" height="168" src="./assets/img/1675731555_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-41.jpg" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <h1 class="title">Крутыш</h1>
+
+          <div class="price">2 000 500 Р.</div>
+        </article>
+        <article class="catalog-item new">
+          <div class="actions">
+            <a href="#" class="buy">Купить</a>
+            <a href="#" class="bookmark">В закладки</a>
+          </div>
+          <div class="catalog-item-image">
+            <img width="218" height="168" src="./assets/img/1675731506_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-6.jpg" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <h1 class="title">Циклоп</h1>
+
+          <div class="price">3 950 000 Р</div>
+        </article>
+        <div class="catalog-items">
+          <article class="catalog-item new">
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
+            <div  class="catalog-item-image">
+              <img width="2180" height="168" src="./assets/img/1675731557_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-36.jpg" alt="Перфоратор BOSCH BFG 3000">
+            </div>
+            <h1 class="title">КУПИдон</h1>
+  
+            <div class="price">6 500 500 Р.</div>
+          </article>
+          <article class="catalog-item new">
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
+            <div class="catalog-item-image">
+              <img width="218" height="168" src="./assets/img/1675731526_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-56.jpg" alt="Перфоратор BOSCH BFG 3000">
+            </div>
+            <h1 class="title">КарлиТо</h1>
+  
+            <div class="price"> 700 500 Р.</div>
+          </article>
+          <article class="catalog-item new">
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
+            <div class="catalog-item-image">
+              <img width="218" height="168" src="./assets/img/1675731521_kartinkin-net-p-kharlei-devidson-mototsikl-pinterest-28.jpg" alt="Перфоратор BOSCH BFG 3000">
+            </div>
+            <h1 class="title">БЕШаный в  Садник</h1>
+  
+            <div class="price">3 090 000 Р</div>
+          </article>
+
+          <hr>
+          <h1>Видео обзоры</h1>
+          <iframe class="yt_vidio" width="400" height="240" src="https://www.youtube.com/embed/iOEiqwZ-XfM?si=vr9U1XYchhmMttwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="yt_vidio2" width="400" height="240" src="https://www.youtube.com/embed/vSzHYKXrGTg?si=17vX7oL6V-vlCX5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe class="yt_vidio3" width="400" height="240" src="https://www.youtube.com/embed/MVDItFhQweo?si=8nfM5dike8Y4N3Dq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+          <h1>О нашей работе: </h1>
+          <p class="disc">Каждый проект мотоцикла тщательно согласовывается с заказчиком, включая покраску и любые доработки. Наш профессиональный команды выполняет кастомизацию согласно проекту и уделяет особое внимание каждой детали. Мы гарантируем, что все проекты будут выполнены в срок и превзойдут ваши ожидания. Наши клиенты ценят наше качество, внимание к деталям и приверженность превосходному обслуживанию. Свяжитесь с нами сегодня, чтобы начать работу над мотоциклом вашей мечты!</p>
+
+          <hr>
+
+          <link rel="stylesheet" href="./assets/styles/btn-up.css">
+          <style>
+            body {
+              min-height: 2000px;
+            }
+          </style>
+        
+        
+        
+          
+        
+          <div class="btn-up btn-up_hide"></div>
+         <h1>Наш Офис:</h1>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A03e191a26e0f4ab82852de96151d634b405383674689fb0410aa2bb5f4cf5d92&amp;source=constructor" width="1300" height="500" frameborder="0"></iframe>
+        <hr>
+        <!-- <h1>Отзывы на нашу компанию:</h1> -->
+        <div style="width:700px;height:800px;overflow:hidden;position:relative; margin: 100px auto;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/86023206482?comments"></iframe>
+          <a href="https://yandex.ru/maps/org/bike4you/86023206482/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Bike4you на карте Ростова‑на‑Дону — Яндекс Карты</a>
+        </div>
+
+          <script src="./assets/js/btn-up.js"></script>
+          <script src="./assets/js/main.js"></script>
+          
+          
+          
+<!-- корзина -->
+
+ <!--Библиотека jQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!--Готовый скрипт корзины-->
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-e04e8c02.js"></script>
+
+<!--Стили элементов для корзины-->
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-e04e8c02.css" rel="stylesheet">
+
+
+
+</body>
+</html>
